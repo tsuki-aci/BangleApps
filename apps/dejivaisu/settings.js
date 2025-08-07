@@ -1,10 +1,10 @@
 (function back() {
     const storage = require('Storage');
     // Load existing settings or initialize defaults
-    let settings = storage.readJSON('setting.json') || {};
+    let settings = storage.readJSON('dejivaisu.json') || {};
 
     function saveSettings() {
-        storage.write('setting.json', settings);
+        storage.write('dejivaisu.json', settings);
     }
 
     E.showMenu({
