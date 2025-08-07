@@ -192,6 +192,6 @@ Bangle.setUI({
   }
 });
 // Load widgets
-Bangle.loadWidgets();
-Bangle.drawWidgets();
+// Bangle.loadWidgets();
+// Bangle.drawWidgets();
 }
