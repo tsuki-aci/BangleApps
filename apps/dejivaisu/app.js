@@ -4,7 +4,12 @@
 const storage = require('Storage');
 require("Font8x16").add(Graphics);
 
-let appsettings = storage.readJSON('setting.json');
+var appsettings = Object.assign({
+  // default values
+  showMascot: true,
+  showDJSeconds: true,
+}, require('Storage').readJSON("dejivaisu.json", true) || {});
+// let appsettings = storage.readJSON('dejivaisu.json');
 
 //MASCOT
 if (appsettings.showMascot) {
